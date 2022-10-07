@@ -1,18 +1,14 @@
 <template>
-
+  <p>{{ description }}</p>
 </template>
 
 <script>
-
 export default {
-    name: "Description",
-    props: {
-        description: String,
-
-    }
-}
+  name: "Description",
+  props: {
+    description: String,
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

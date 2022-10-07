@@ -1,6 +1,7 @@
 <template>
-  <img src={{source}} alt={{title}} />
-  <h3>{{title}}</h3>
+  <div>
+    <img :src=source alt="{{title}}" />
+  </div>
 </template>
 
 <script>
@@ -10,11 +11,17 @@ export default {
     source: String,
     title: String,
   },
+  data() {
+    return {
+    //   source: require(this.source),
+    };
+  },
 };
 </script>
 
-<style>
-image {
-  max-width: 150px;
+<style scoped>
+img {
+  width: 200px;
+  height: 160px;
 }
 </style>
